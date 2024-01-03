@@ -32,4 +32,4 @@ jobs:
         with:
           root: web # 📝 Update the root directory if necessary
           project: "insta-dupe" # 📝 Update the deploy project name if necessary
-          entrypoint: "./web/src/main.ts" # 📝 Update the entrypoint if necessary
+          entrypoint: "./src/main.ts" # 📝 Update the entrypoint if necessary
