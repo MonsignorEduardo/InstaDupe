@@ -24,10 +24,12 @@ jobs:
           deno-version: v1.x
 
       - name: Build step
+        working-directory: ./web
         run: "deno task build" # 📝 Update the build command(s) if necessary
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
+          root: web # 📝 Update the root directory if necessary
           project: "insta-dupe" # 📝 Update the deploy project name if necessary
-          entrypoint: "./main.ts" # 📝 Update the entrypoint if necessary
+          entrypoint: "./web/src/main.ts" # 📝 Update the entrypoint if necessary
