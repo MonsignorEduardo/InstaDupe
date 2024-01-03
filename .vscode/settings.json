@@ -19,10 +19,13 @@
   "cSpell.words": [
     "daisyui",
     "dracula",
+    "fastapi",
     "instagram",
     "lucide",
     "preact",
     "tailwindcss",
     "trpc"
-  ]
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true
 }
